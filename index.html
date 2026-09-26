@@ -96,13 +96,13 @@ img{max-width:100%}
   nav{padding:18px 20px;gap:12px;flex-wrap:wrap;justify-content:center}
   nav a{font-size:.78rem;letter-spacing:.06em}
   #hero{min-height:720px;height:100svh;max-height:900px}
-  .hero-title-wrap{margin-top:clamp(28px,10vh,90px)}
-  h1.hero-title{font-size:clamp(3.15rem,13vw,7rem)!important;letter-spacing:-.055em;padding:0 12px;text-align:center;white-space:normal;line-height:.95}
-  .hero-bottom{align-items:flex-start;flex-direction:column;justify-content:flex-end;gap:14px;padding:0 20px 28px;z-index:11}
-  .hero-desc{font-size:.8rem;max-width:210px}
+  .hero-title-wrap{margin-top:clamp(12px,3vh,28px)}
+  h1.hero-title{font-size:clamp(2.5rem,12.5vw,5.5rem)!important;letter-spacing:-.055em;padding:0 12px;text-align:center;white-space:nowrap;line-height:.95}
+  .hero-bottom{position:absolute;left:20px;right:20px;bottom:424px;align-items:flex-start;flex-direction:column;justify-content:flex-end;gap:14px;padding:0;z-index:11}
+  .hero-desc{font-size:.8rem;max-width:46%;}
   .btn-contact{font-size:.72rem;padding:11px 22px}
-  .portrait-wrap{width:clamp(230px,65vw,390px);left:50%;bottom:48px}
-  #marquee{padding-top:70px}
+  .portrait-wrap{width:clamp(190px,58vw,330px);left:calc(50% - 14px);right:auto;top:calc(clamp(150px,23vh,205px) - 90px);bottom:auto;transform:translateX(-50%)}
+  #marquee{padding-top:70px;margin-top:-300px;position:relative}
   .marquee-row{gap:8px}
   .marquee-row+.marquee-row{margin-top:8px}
   .marquee-img{width: min(72vw,320px);height: min(46vw,205px);border-radius:12px}
@@ -141,9 +141,12 @@ img{max-width:100%}
   #hero{min-height:680px}
   nav{gap:8px 14px}
   nav a{font-size:.7rem}
-  .hero-title-wrap{margin-top:10vh}
+  .hero-title-wrap{margin-top:clamp(12px,3vh,24px)}
   h1.hero-title{font-size:12.5vw!important}
-  .portrait-wrap{width:68vw;bottom:100px}
+  .hero-bottom{left:16px;right:16px;bottom:420px}
+  .hero-desc{max-width:48%;font-size:.72rem}
+  .portrait-wrap{width:60vw;left:calc(50% - 14px);right:auto;top:calc(clamp(150px,23vh,205px) - 90px);bottom:auto;transform:translateX(-50%)}
+  .portrait-wrap img{max-height:42svh;object-fit:contain;object-position:bottom}
   .card-top{display:grid;grid-template-columns:auto 1fr;}
   .card-top .btn-live{grid-column:2;justify-self:start}
   .card-imgs{grid-template-columns:1fr}
